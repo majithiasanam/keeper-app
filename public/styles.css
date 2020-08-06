@@ -54,6 +54,11 @@ footer p {
   padding: 2% 2% 0;
 }
 
+.notes_area {
+  display: flex;
+  justify-content: center;
+}
+
 .newNote > * {
   border: none;
   margin: 2%;

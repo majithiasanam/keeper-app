@@ -11,9 +11,13 @@ function App() {
     <>
       <Heading />
       <CreateNote />
-      {notes.map((note, id) => {
-        return <Note id={id} title={note.title} description={note.description} />
-      })}
+      <div className="notes_area">
+        {notes.map((note, id) => {
+          return (
+            <Note id={id} title={note.title} description={note.description} />
+          );
+        })}
+      </div>
       <Footer />
     </>
   );
