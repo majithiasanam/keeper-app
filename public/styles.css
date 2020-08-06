@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #eee;
+  padding: 0;
+}
+
+header {
+  background-color: #f5ba13;
+  margin: auto;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+}
+
+header img {
+  width: 4%;
+  object-fit: contain;
+  margin-right: 2%;
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+
+.newNote {
+  margin: 3% auto;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 2% 2% 0;
+}
+
+.newNote > * {
+  border: none;
+  margin: 2%;
+}
+
+.newNote > *:focus {
+  outline: none;
+}
+
+.newNote_title {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.newNote button, .note button {
+  width: fit-content;
+  float: right;
+  border: none;
+  background-color: transparent;
+  color: #3b3b3bd1;
+  font-weight: 700;
+  padding: 2%;
+}
+
+.newNote button:focus, .note button:focus {
+  outline: none;
+}
+
+.newNote button:active, .note button:active {
+  color: #fff;
+  background-color: #ccc;
+  box-shadow: 2px 3px 5px #000;
+  transform: translateY(2px);
+  border-radius: 3px;
+}
+
+#newNote_details {
+  overflow: hidden;
+  max-height: 200px;
+  resize: none;
+}
+
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 2%;
+  max-width: 30vw;
+  margin: 2vw;
+  float: left;
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #3b3b3b3d;
+}
+.note p {
+  font-size: 0.9em;
+  margin: 20px 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
