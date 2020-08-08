@@ -16,7 +16,7 @@ function Note({ id, title, description }) {
       <div className="note">
         <h1>{title}</h1>
         <p>{description}</p>
-        <div>
+        <div class="note_button">
           <button onClick={removeNote}>Delete</button>
         </div>
       </div>
